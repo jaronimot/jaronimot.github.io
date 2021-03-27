@@ -1,7 +1,86 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-	</body>
-</html>
+<head>
+    <title>Sumo
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3C8D0D">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+</head>
+
+
+
+<body>
+    <div id="page" data-role="page">
+        <script>
+        function getFood()
+        {
+            var foods = [
+                "Nick's Grill",
+                "Mi Tierra",
+                "La Corona Mexican",
+                "burritos",
+                "Hokkaido Ramen Santouka",
+                "Shake Shack",
+                "Pho Ready",
+                "Pagliacci",
+                "Box Eatery",
+                "Hapa Food truck",
+                "Ezelle's",
+                "Taco Time",
+                "Costco",
+                "teriyaki",
+                "sushi",
+                "ramen",
+                "Woodinville Ramen",
+                "sandwiches",
+                "Homegrown",
+                "pizza",
+                "burgers",
+                "steak and rice",
+                "chicken and rice",
+                "eggs",
+                "tacos!",
+                "Chinese",
+                "Italian",
+                "Padria",
+                "hot dogs",
+                "stir-fry",
+                "Shake and Go",
+                "Chick Fil A",
+                "thai",
+                "Indian food",
+                "tikka masala",
+                "new food",
+                "fish n chips",
+                "pasta primavera",
+                "chicken parm",
+                "gyro",
+            ];
+
+            var food = foods[Math.floor(Math.random()*foods.length)];
+            $("#the-food").html("Eat some " + `<a href="https://google.com/search?q=${food}">${food}</a>`);
+        }
+        $(document).ready(function() {
+            getFood();
+        });
+        </script>
+
+
+        <div id="hat" data-role="header">
+            <h1>
+                Sumo Needs Food!
+            </h1>
+        </div>
+
+        <div data-role="content">
+            <input type="button" value="Eat Something" onclick="getFood()">
+            <h1 id="the-food" style="text-align:center;"></h1>
+            <h1 style="text-align:center;" onclick="getFood()" >
+                <img style="-webkit-user-select: none" src="https://img1.etsystatic.com/044/0/8445883/il_340x270.526781863_4j86.jpg">
+            </h1>
+        </div>
+    </div>
+</body>
