@@ -193,21 +193,21 @@ class _MyHomePageState extends State<MyHomePage> {
                                     child: Icon(Icons.arrow_back),),
                             ),
                         ),
+                        Align(
+                            alignment: Alignment.bottomCenter,
+                            child: FloatingActionButton(
+                                onPressed: _incrementCounter,
+                                child: Icon(Icons.add),),
+                            ),
                         Padding(padding: EdgeInsets.only(right: 15),
                             child: Align(
                                 alignment: Alignment.bottomRight,
                                 child: FloatingActionButton(
-                                    onPressed: _incrementCounter,
-                                    child: Icon(Icons.add),),
+                                    onPressed: _findFood,
+                                    child: Icon(Icons.search),),
                             ),
                         ),
-                        Align(
-                            alignment: Alignment.bottomCenter,
-                            child: FloatingActionButton(
-                                onPressed: _findFood,
-                                child: Icon(Icons.search),),
-                            ),
-                        ],
+                    ],
                 )
             );
             }
