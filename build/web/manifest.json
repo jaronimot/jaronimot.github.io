@@ -1,11 +1,11 @@
 {
-    "name": "sumo_flutter",
-    "short_name": "sumo_flutter",
+    "name": "Sumo",
+    "short_name": "Sumo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A new Flutter project for Sumo.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
