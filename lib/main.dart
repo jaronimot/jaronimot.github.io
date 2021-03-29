@@ -170,11 +170,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     // center the children vertically; the main axis here is the vertical
                     // axis because Columns are vertical (the cross axis would be
                     // horizontal).
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                        Text(
-                            _food != "" ? 'Eat some $_food' : 'Eat Something!',
-                            style: Theme.of(context).textTheme.headline4,
+                        Padding(padding: EdgeInsets.all(30),
+                            child:
+                            Text(
+                                _food != "" ? 'Eat some $_food' : 'Eat Something!',
+                                style: Theme.of(context).textTheme.headline4,
+                                textAlign: TextAlign.center,
+                            ),
                         ),
                         GestureDetector(
                             onTap: _incrementCounter,
@@ -214,5 +217,5 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                 )
             );
-            }
         }
+    }
