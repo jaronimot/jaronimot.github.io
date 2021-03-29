@@ -24,7 +24,7 @@ class Sumo extends StatelessWidget {
                 // or simply save your changes to "hot reload" in a Flutter IDE).
                 // Notice that the counter didn't reset back to zero; the application
                 // is not restarted.
-                primarySwatch: Colors.blue,
+                primarySwatch: Colors.green,
             ),
             home: MyHomePage(title: 'Sumo needs food!'),
         );
@@ -169,11 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                         Text(
-                            "Eat Something!",
-                            style: Theme.of(context).textTheme.headline2,
-                        ),
-                        Text(
-                            _food != "" ? 'Eat some $_food' : '',
+                            _food != "" ? 'Eat some $_food' : 'Eat Something!',
                             style: Theme.of(context).textTheme.headline4,
                         ),
                         GestureDetector(
@@ -185,32 +181,34 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                 ),
             ),
+            floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
             floatingActionButton:
-            Stack(
-                children: <Widget>[
-                    Padding(padding: EdgeInsets.only(left:31),
-                    child:
-                        Align(
-                            alignment: Alignment.bottomLeft,
-                            child: FloatingActionButton(
-                                onPressed: _decrementCounter,
-                                child: Icon(Icons.arrow_back),),
+                Stack(
+                    children: [
+                        Padding(padding: EdgeInsets.only(left:15),
+                            child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: FloatingActionButton(
+                                    onPressed: _decrementCounter,
+                                    child: Icon(Icons.arrow_back),),
                             ),
                         ),
-                        Align(
-                            alignment: Alignment.bottomRight,
-                            child: FloatingActionButton(
-                                onPressed: _incrementCounter,
-                                child: Icon(Icons.add),),
+                        Padding(padding: EdgeInsets.only(right: 15),
+                            child: Align(
+                                alignment: Alignment.bottomRight,
+                                child: FloatingActionButton(
+                                    onPressed: _incrementCounter,
+                                    child: Icon(Icons.add),),
                             ),
+                        ),
                         Align(
                             alignment: Alignment.bottomCenter,
                             child: FloatingActionButton(
                                 onPressed: _findFood,
                                 child: Icon(Icons.search),),
                             ),
-                    ],
-                    )
-                );
+                        ],
+                )
+            );
             }
         }
