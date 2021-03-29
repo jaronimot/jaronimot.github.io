@@ -94,6 +94,10 @@ class _MyHomePageState extends State<MyHomePage> {
         "pasta primavera",
         "chicken parm",
         "gyro",
+        "apple sauce",
+        "noodles",
+        "Panda Express",
+        "salmon",
     ];
     String url = "";
 
