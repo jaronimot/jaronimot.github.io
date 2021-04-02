@@ -224,11 +224,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            // Padding(
+            //   padding: EdgeInsets.only(left: 85),
+            //   child: Align(
+            //     alignment: Alignment.bottomLeft,
+            //     child: FloatingActionButton(
+            //       onPressed: _incrementCounter,
+            //       child: Icon(Icons.refresh),
+            //     ),
+            //   ),
+            // ),
             Align(
               alignment: Alignment.bottomCenter,
               child: FloatingActionButton(
                 onPressed: _incrementCounter,
-                child: Icon(Icons.add),
+                child: Icon(Icons.refresh),
               ),
             ),
             Padding(
@@ -241,18 +251,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            // Padding(
+            //   padding: EdgeInsets.only(right: 85),
+            //   child: Align(
+            //     alignment: Alignment.bottomRight,
+            //     child: FloatingActionButton(
+            //       onPressed: _getHolidays,
+            //       child: Icon(Icons.calendar_today),
+            //     ),
+            //   ),
+            // ),
             Padding(
               padding: EdgeInsets.only(right: 85),
-              child: Align(
-                alignment: Alignment.bottomRight,
-                child: FloatingActionButton(
-                  onPressed: _getHolidays,
-                  child: Icon(Icons.calendar_today),
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(right: 155),
               child: Align(
                 alignment: Alignment.bottomRight,
                 child: FloatingActionButton(
@@ -416,15 +426,8 @@ class _PlayPageState extends State<PlayPage> {
                 ),
               ),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: FloatingActionButton(
-                onPressed: _incrementCounter,
-                child: Icon(Icons.add),
-              ),
-            ),
             Padding(
-              padding: EdgeInsets.only(right: 85),
+              padding: EdgeInsets.only(right: 15),
               child: Align(
                 alignment: Alignment.bottomRight,
                 child: FloatingActionButton(
@@ -433,8 +436,18 @@ class _PlayPageState extends State<PlayPage> {
                 ),
               ),
             ),
+            // Padding(
+            //   padding: EdgeInsets.only(right: 0),
+            //   child: Align(
+            //     alignment: Alignment.bottomLeft,
+            //     child: FloatingActionButton(
+            //       onPressed: _getHolidays,
+            //       child: Icon(Icons.calendar_today),
+            //     ),
+            //   ),
+            // ),
             Padding(
-              padding: EdgeInsets.only(right: 155),
+              padding: EdgeInsets.only(right: 85),
               child: Align(
                 alignment: Alignment.bottomRight,
                 child: FloatingActionButton(
@@ -443,16 +456,13 @@ class _PlayPageState extends State<PlayPage> {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(right: 15),
-              child: Align(
-                alignment: Alignment.bottomRight,
-                child: FloatingActionButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: Icon(Icons.home),
-                ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Icon(Icons.home),
               ),
             ),
           ],
