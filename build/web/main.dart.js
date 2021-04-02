@@ -47674,7 +47674,7 @@ F.W1.prototype={
 $1:function(a){return new F.iv("Do Something!",null)},
 $S:95}
 F.iv.prototype={
-aN:function(){return new F.u2([],H.b(["Play basketball","Make a video","Play outside","Do some coloring","Ride bikes","Go for a walk","Go to the track","Play with air fort","Play with slime","Play toss the dounts","Make a fire","Play Roblox","Play Wii","Play with jump rope","Go to park"],t.s),C.m)}}
+aN:function(){return new F.u2([],H.b(["Play basketball","Make a video","Play outside","Do some coloring","Ride bikes","Go for a walk","Go to the track","Play with air fort","Play with slime","Play toss the dounts","Make a fire","Play Roblox","Play Wii","Play with jump rope","Go to park","Play with MagTiles"],t.s),C.m)}}
 F.u2.prototype={
 kv:function(){var s=0,r=P.a5(t.z),q=this,p,o
 var $async$kv=P.a0(function(a,b){if(a===1)return P.a2(b,r)
