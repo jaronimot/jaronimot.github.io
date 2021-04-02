@@ -388,7 +388,9 @@ class _PlayPageState extends State<PlayPage> {
               Padding(
                 padding: EdgeInsets.all(30),
                 child: Text(
-                  _activity != "" ? '$_activity' : 'Do Something!',
+                  _activity != ""
+                      ? '$_activity'
+                      : _activities[Random().nextInt(_activities.length)],
                   style: Theme.of(context).textTheme.headline4,
                   textAlign: TextAlign.center,
                 ),
@@ -422,12 +424,34 @@ class _PlayPageState extends State<PlayPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(right: 15),
+              padding: EdgeInsets.only(right: 85),
               child: Align(
                 alignment: Alignment.bottomRight,
                 child: FloatingActionButton(
                   onPressed: _getHolidays,
                   child: Icon(Icons.calendar_today),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 155),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: FloatingActionButton(
+                  onPressed: _incrementCounter,
+                  child: Icon(Icons.sports),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(right: 15),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: FloatingActionButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Icon(Icons.home),
                 ),
               ),
             ),
