@@ -313,7 +313,7 @@ class _PlayPageState extends State<PlayPage> {
     "Ride bikes",
     "Go for a walk",
     "Go to the track",
-    "Play with air fort",
+    "Play with the air fort",
     "Play with slime",
     "Play toss the dounts",
     "Make a fire",
@@ -322,6 +322,11 @@ class _PlayPageState extends State<PlayPage> {
     "Play with jump rope",
     "Go to park",
     "Play with MagTiles",
+    "Play with cards",
+    "Read some books",
+    "Pester your parents",
+    "Picnic outside",
+    "Play at Abigail's house",
   ];
   String url = "";
 
