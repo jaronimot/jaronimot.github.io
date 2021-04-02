@@ -325,6 +325,11 @@ class _PlayPageState extends State<PlayPage> {
   ];
   String url = "";
 
+  @override
+  void initState() {
+    _incrementCounter();
+  }
+
   void _getHolidays() async {
     url = 'https://www.checkiday.com/';
 
@@ -344,7 +349,7 @@ class _PlayPageState extends State<PlayPage> {
       // called again, and so nothing would appear to happen.
       _counter++;
       _activity = _activities[Random().nextInt(_activities.length)];
-      _activities.add(_activity);
+      _activityTracker.add(_activity);
     });
   }
 
@@ -399,9 +404,7 @@ class _PlayPageState extends State<PlayPage> {
               Padding(
                 padding: EdgeInsets.all(30),
                 child: Text(
-                  _activity != ""
-                      ? '$_activity'
-                      : _activities[Random().nextInt(_activities.length)],
+                  _activity != "" ? '$_activity' : "Do Something!",
                   style: Theme.of(context).textTheme.headline4,
                   textAlign: TextAlign.center,
                 ),
