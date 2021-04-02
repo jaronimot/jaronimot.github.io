@@ -21,6 +21,7 @@ environment:
   sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
+  http: ^0.13.1
   flutter:
     sdk: flutter
   url_launcher: ^6.0.3    # Good, any 5.4.x version where x >= 0 works.
