@@ -68,7 +68,6 @@ class _MyHomePageState extends State<MyHomePage> {
     "Pho Ready",
     "Pagliacci",
     "Box Eatery",
-    "Hapa Food truck",
     "Ezell's",
     "Taco Time",
     "Costco",
