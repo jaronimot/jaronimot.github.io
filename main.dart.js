@@ -47674,7 +47674,7 @@ F.W1.prototype={
 $1:function(a){return new F.iv("Do Something!",null)},
 $S:95}
 F.iv.prototype={
-aN:function(){return new F.u2([],H.b(["Play basketball","Make a video","Play outside","Do some coloring","Ride bikes","Go for a walk","Go to the track","Play with the air fort","Play with slime","Play toss the dounts","Make a fire","Play Roblox","Play Wii","Play with jump rope","Go to park","Play with MagTiles","Play with cards","Read some books","Pester your parents","Picnic outside","Play at Abigail's house"],t.s),C.m)}}
+aN:function(){return new F.u2([],H.b(["Play basketball","Make a video","Play outside","Do some coloring","Ride bikes","Go for a walk","Go to the track","Play with the air fort","Play with slime","Play toss the dounts","Make a fire","Play Roblox","Play Wii","Play with jump rope","Go to park","Play with cards","Read some books","Pester your parents","Picnic outside"],t.s),C.m)}}
 F.u2.prototype={
 bc:function(){this.n2()},
 kv:function(){var s=0,r=P.a5(t.z),q=this,p,o
@@ -47702,7 +47702,7 @@ r=t.p
 return M.a4h(o,T.vU(T.a2D(H.b([new T.d_(new V.aL(30,30,30,30),L.B2(n,K.bP(b).as.d,C.eA),p),D.xy(p,U.a3d(new L.lg("images/il_340x270.526781863_4j86.jpg")),C.bb,!1,p,p,p,p,p,p,p,p,p,p,s,p,p,p,p,p)],r),C.m9),p,p),T.rj(C.h4,H.b([new T.d_(new V.aL(15,0,0,0),new T.cR(C.nI,p,p,E.i5(L.ia(C.lb),!1,q.gqw()),p),p),new T.d_(new V.aL(0,0,15,0),new T.cR(C.ip,p,p,E.i5(L.ia(C.va),!1,q.gMd()),p),p),new T.d_(new V.aL(0,0,85,0),new T.cR(C.ip,p,p,E.i5(L.ia(C.oK),!1,s),p),p),new T.cR(C.kI,p,p,E.i5(L.ia(C.vb),!1,new F.Wb(b)),p)],r),C.fY),C.oe)}}
 F.Wa.prototype={
 $0:function(){var s,r=this.a;++r.d
-s=r.r[C.oj.CV(21)]
+s=r.r[C.oj.CV(19)]
 r.e=s
 r.f.push(s)},
 $S:0}
