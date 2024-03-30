@@ -320,12 +320,10 @@ class _PlayPageState extends State<PlayPage> {
     "Play Wii",
     "Play with jump rope",
     "Go to park",
-    "Play with MagTiles",
     "Play with cards",
     "Read some books",
     "Pester your parents",
     "Picnic outside",
-    "Play at Abigail's house",
   ];
   String url = "";
 
