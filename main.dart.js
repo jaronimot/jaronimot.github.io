@@ -48763,7 +48763,7 @@ F.X8.prototype={
 $1:function(a){return new F.iA("Do Something!",null)},
 $S:99}
 F.iA.prototype={
-aH:function(){return new F.uC([],H.b(["Go Plinking!","Go Sailing","Nature Walk","St. Edwards","Grom ride","Pull some weeds","Tend the garden","Water the plants","Fly!","Fly kites!","Play basketball","Play outside","Do some coloring","Ride bikes","Go for a walk","Go to the track","Play with slime","Play toss the dounts","Make a fire","Play Roblox","Play Wii","Play with jump rope","Go to park","Play with cards","Read some books","Pester your parents","Picnic outside"],t.s),C.l)}}
+aH:function(){return new F.uC([],H.b(["Go Plinking!","Go Sailing","Nature Walk","St. Edwards","Grom ride","Pull some weeds","Tend the garden","Water the plants","Fly!","Fly kites!","Play basketball","Play outside","Do some coloring","Ride bikes","Go for a walk","Go to the track","Play with slime","Play toss the dounts","Make a fire","Play Roblox","Play Wii","Play with jump rope","Go to park","Play with cards","Read some books","Pester your parents","Picnic outside","Make some cookies","Play football!","Moped ride","Scooter ride","Visit the alpaca"],t.s),C.l)}}
 F.uC.prototype={
 aY:function(){this.nm()},
 kL:function(){var s=0,r=P.a1(t.z),q=this,p,o
@@ -48791,7 +48791,7 @@ r=t.p
 return M.a5z(o,T.wx(T.a3U(H.b([new T.cC(new V.aD(30,30,30,30),L.rX(n,K.bJ(b).ap.d,C.eD),p),D.pG(p,U.a4u(new L.lq("images/il_340x270.526781863_4j86.jpg")),C.aV,!1,p,p,p,p,p,p,p,p,p,p,p,s,p,p,p,p,p)],r),C.jN),p,p),T.rK(C.eI,H.b([new T.cC(new V.aD(15,0,0,0),new T.c6(C.nR,p,p,E.fd(L.fg(C.lj),!1,q.gqN()),p),p),new T.cC(new V.aD(0,0,15,0),new T.c6(C.eJ,p,p,E.fd(L.fg(C.vu),!1,q.gN4()),p),p),new T.cC(new V.aD(0,0,15,65),new T.c6(C.eJ,p,p,E.fd(L.fg(C.oU),!1,F.a81()),p),p),new T.cC(new V.aD(0,0,85,0),new T.c6(C.eJ,p,p,E.fd(L.fg(C.oW),!1,s),p),p),new T.c6(C.kN,p,p,E.fd(L.fg(C.vv),!1,new F.Xk(b)),p)],r),C.h0),C.on)}}
 F.Xj.prototype={
 $0:function(){var s,r=this.a;++r.d
-s=r.r[C.os.Dz(27)]
+s=r.r[C.os.Dz(32)]
 r.e=s
 r.f.push(s)},
 $S:0}
