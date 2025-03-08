@@ -1,12 +1,17 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import "dart:math";
 import 'dart:core';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:http/http.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(Sumo());
 }
+
+final GlobalKey<ScaffoldMessengerState> rootScaffoldMessengerKey =
+    GlobalKey<ScaffoldMessengerState>();
 
 class Sumo extends StatelessWidget {
   // This widget is the root of your application.
@@ -31,6 +36,7 @@ class Sumo extends StatelessWidget {
         MyHomePage.route: (context) => MyHomePage(title: 'Sumo needs food!'),
         PlayPage.route: (context) => PlayPage(title: 'Do something!'),
       },
+      scaffoldMessengerKey: rootScaffoldMessengerKey,
     );
   }
 }
@@ -60,23 +66,19 @@ class _MyHomePageState extends State<MyHomePage> {
   var foodTracker = [];
   var _foods = [
     "Nick's Grill",
-    "Mi Tierra",
     "La Corona Mexican",
     "burritos",
     "Hokkaido Ramen Santouka",
     "Shake Shack",
-    "Pho Ready",
     "Pagliacci",
     "Box Eatery",
     "Ezell's",
     "Taco Time",
     "Costco",
-    "teriyaki",
     "sushi",
     "ramen",
     "Woodinville Ramen",
     "sandwiches",
-    "Homegrown",
     "pizza",
     "burgers",
     "steak and rice",
@@ -89,6 +91,14 @@ class _MyHomePageState extends State<MyHomePage> {
     "hot dogs",
     "stir-fry",
     "Shake and Go",
+    "Pork",
+    "steak",
+    "brisket",
+    "hawaiian chili",
+    "cheesy eggs",
+    "teriyaki",
+    "ramen",
+    "spaghetti",
     "Chick Fil A",
     "thai",
     "Indian food",
@@ -98,9 +108,13 @@ class _MyHomePageState extends State<MyHomePage> {
     "pasta primavera",
     "chicken parm",
     "gyro",
+    "bbq",
     "apple sauce",
     "noodles",
-    "Panda Express",
+    "Stack burger",
+    "Brisket",
+    "Kalua Pork",
+    "Budda Brudda",
     "salmon",
   ];
   String url = "";
@@ -117,15 +131,6 @@ class _MyHomePageState extends State<MyHomePage> {
   void _getHolidays() async {
     url = 'https://www.checkiday.com/';
 
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
-  void _getVerse() async {
-    url = 'https://beta.ourmanna.com/api/v1/get/?format=text&order=random';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -195,7 +200,7 @@ class _MyHomePageState extends State<MyHomePage> {
             // horizontal).
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.all(30),
+                padding: EdgeInsets.only(bottom: 80, top: 40),
                 child: Text(
                   _food != "" ? 'Eat some $_food' : 'Eat Something!',
                   style: Theme.of(context).textTheme.headline4,
@@ -205,6 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
               GestureDetector(
                 onTap: _incrementCounter,
                 child: Image(
+                    // image: AssetImage('images/OIG2.Um4ubwRIbGTTVADZHB.jpg')),
                     image: AssetImage('images/il_340x270.526781863_4j86.jpg')),
               ),
             ],
@@ -213,6 +219,17 @@ class _MyHomePageState extends State<MyHomePage> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: Stack(
           children: [
+            Padding(
+              padding: EdgeInsets.only(bottom: 65, right: 15),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: FloatingActionButton(
+                  onPressed: _PlayPageState._getVerse,
+                  child: Icon(Icons.wb_sunny_outlined),
+                ),
+              ),
+            ),
+
             Padding(
               padding: EdgeInsets.only(left: 15),
               child: Align(
@@ -240,6 +257,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Icon(Icons.refresh),
               ),
             ),
+
             Padding(
               padding: EdgeInsets.only(right: 15),
               child: Align(
@@ -301,18 +319,41 @@ class PlayPage extends StatefulWidget {
 }
 
 class _PlayPageState extends State<PlayPage> {
+  static void _getVerse() async {
+    String url =
+        'https://beta.ourmanna.com/api/v1/get/?format=text&order=random';
+    final response = await http.get(Uri.parse(url));
+    if (response.statusCode == 200) {
+      var decoded = utf8.decode(response.bodyBytes);
+      print(decoded);
+      rootScaffoldMessengerKey.currentState?.hideCurrentSnackBar();
+      rootScaffoldMessengerKey.currentState?.showSnackBar(
+          SnackBar(duration: Duration(days: 2), content: Text(decoded)));
+    } else {
+      print("Error");
+    }
+  }
+
   int _counter = 0;
   String _activity = "";
   var _activityTracker = [];
   var _activities = [
+    "Go Plinking!",
+    "Go Sailing",
+    "Nature Walk",
+    "St. Edwards",
+    "Grom ride",
+    "Pull some weeds",
+    "Tend the garden",
+    "Water the plants",
+    "Fly!",
+    "Fly kites!",
     "Play basketball",
-    "Make a video",
     "Play outside",
     "Do some coloring",
     "Ride bikes",
     "Go for a walk",
     "Go to the track",
-    "Play with the air fort",
     "Play with slime",
     "Play toss the dounts",
     "Make a fire",
@@ -324,6 +365,11 @@ class _PlayPageState extends State<PlayPage> {
     "Read some books",
     "Pester your parents",
     "Picnic outside",
+    "Make some cookies",
+    "Play football!",
+    "Moped ride",
+    "Scooter ride",
+    "Visit the alpaca",
   ];
   String url = "";
 
@@ -442,16 +488,16 @@ class _PlayPageState extends State<PlayPage> {
                 ),
               ),
             ),
-            // Padding(
-            //   padding: EdgeInsets.only(right: 0),
-            //   child: Align(
-            //     alignment: Alignment.bottomLeft,
-            //     child: FloatingActionButton(
-            //       onPressed: _getHolidays,
-            //       child: Icon(Icons.calendar_today),
-            //     ),
-            //   ),
-            // ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 65, right: 15),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: FloatingActionButton(
+                  onPressed: _getVerse,
+                  child: Icon(Icons.wb_sunny_outlined),
+                ),
+              ),
+            ),
             Padding(
               padding: EdgeInsets.only(right: 85),
               child: Align(
