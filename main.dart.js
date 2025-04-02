@@ -48709,13 +48709,13 @@ F.BB.prototype={
 M:function(a,b){var s=X.a1f(null,C.x3),r=P.aE(["/",new F.TN(),"/play",new F.TO()],t.N,t.hw)
 return new S.qf($.a2J(),r,"/","Sumo",s,null)}}
 F.TN.prototype={
-$1:function(a){return new F.kl("Sumo needs food!",null)},
+$1:function(a){return new F.kl("Sumo needs food \ud83d\ude0a!",null)},
 $S:306}
 F.TO.prototype={
 $1:function(a){return new F.iA("Do something!",null)},
 $S:99}
 F.kl.prototype={
-aH:function(){return new F.up([],H.b(["Nick's Grill","La Corona Mexican","burritos","Hokkaido Ramen Santouka","Shake Shack","Pagliacci","Box Eatery","Ezell's","Taco Time","Costco","sushi","ramen","Woodinville Ramen","sandwiches","pizza","burgers","steak and rice","chicken and rice","eggs","tacos!","Chinese","Italian","Padria","hot dogs","stir-fry","Shake and Go","Pork","steak","brisket","hawaiian chili","cheesy eggs","teriyaki","ramen","spaghetti","Chick Fil A","thai","Indian food","tikka masala","new food","fish n chips","pasta primavera","chicken parm","gyro","bbq","apple sauce","noodles","Stack burger","Brisket","Kalua Pork","Budda Brudda","salmon"],t.s),C.l)}}
+aH:function(){return new F.up([],H.b(["Nick's Grill \ud83c\udf54","La Corona Mexican \ud83c\udf2e","burritos \ud83c\udf2f","Hokkaido Ramen Santouka \ud83c\udf5c","Shake Shack \ud83c\udf54","Pagliacci \ud83c\udf55","Box Eatery \ud83e\udd6a","Ezell's \ud83c\udf57","Taco Time \ud83c\udf2e","Costco \ud83d\uded2","sushi \ud83c\udf63","ramen \ud83c\udf5c","Woodinville Ramen \ud83c\udf5c","sandwiches \ud83e\udd6a","pizza \ud83c\udf55","burgers \ud83c\udf54","steak and rice \ud83e\udd69\ud83c\udf5a","chicken and rice \ud83c\udf57\ud83c\udf5a","eggs \ud83c\udf73","tacos! \ud83c\udf2e","Chinese \ud83e\udd61","Italian \ud83c\udf5d","Padria \ud83e\udd56","hot dogs \ud83c\udf2d","stir-fry \ud83c\udf72","Shake and Go \ud83e\udd64","Pork \ud83e\udd69","steak \ud83e\udd69","brisket \ud83c\udf56","hawaiian chili \ud83c\udf36\ufe0f","cheesy eggs \ud83e\uddc0\ud83c\udf73","teriyaki \ud83c\udf71","ramen \ud83c\udf5c","spaghetti \ud83c\udf5d","Chick Fil A \ud83d\udc14","thai \ud83c\udf5b","Indian food \ud83c\udf5b","tikka masala \ud83c\udf5b","new food \ud83c\udf7d\ufe0f","fish n chips \ud83d\udc1f\ud83c\udf5f","pasta primavera \ud83c\udf5d","chicken parm \ud83c\udf57\ud83c\udf5d","gyro \ud83e\udd59","bbq \ud83c\udf56","apple sauce \ud83c\udf4e","noodles \ud83c\udf5c","Stack burger \ud83c\udf54","Brisket \ud83c\udf56","Kalua Pork \ud83d\udc37","Budda Brudda \ud83c\udf72","salmon \ud83d\udc1f"],t.s),C.l)}}
 F.up.prototype={
 kI:function(){var s=0,r=P.a1(t.z),q=this,p,o
 var $async$kI=P.Y(function(a,b){if(a===1)return P.Z(b,r)
