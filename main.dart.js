@@ -19179,10 +19179,10 @@ lA:function lA(a,b){this.c=a
 this.a=b},
 wk:function wk(a,b,c){var _=this
 _.d=0
-_.f=a
-_.r=b
-_.w=c
-_.x=""
+_.e=a
+_.f=b
+_.r=c
+_.w=""
 _.c=_.a=null},
 a3Z:function a3Z(a){this.a=a},
 a3Y:function a3Y(a){this.a=a},
@@ -57793,12 +57793,12 @@ this.aG()},
 Qw(a){if(a instanceof A.iw&&a.c.gqz().i(0,B.fD))this.m5()},
 lX(){var s=0,r=A.R(t.H),q=this,p,o
 var $async$lX=A.S(function(a,b){if(a===1)return A.O(b,r)
-while(true)switch(s){case 0:o="https://google.com/search?q="+q.f.j(0)
-q.x=o
+while(true)switch(s){case 0:o="https://google.com/search?q="+A.p(q.e.k(0,"food"))
+q.w=o
 s=2
 return A.W(A.Ml(o),$async$lX)
 case 2:o=b
-p=q.x
+p=q.w
 s=o?3:5
 break
 case 3:s=6
@@ -57810,19 +57810,19 @@ case 4:return A.P(null,r)}})
 return A.Q($async$lX,r)},
 m5(){this.aj(new A.a3Z(this))},
 tO(){this.aj(new A.a3Y(this))},
-P(a){var s=this,r=null,q=A.aaX(A.uM(s.a.c,r,r)),p=s.gur(),o=t.c,n=A.a7S(A.b([A.uM("Eat some "+A.p(s.f.k(0,"food")),A.aG(a).p1.e,B.c_),A.uM(A.p(s.f.k(0,"emoji")),A.oa(r,r,r,r,r,r,r,r,r,r,r,250,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.c_)],o),B.aI)
-return A.ady(q,A.q2(A.a7S(A.b([new A.cc(new A.aW(0,40,0,80),A.AV(r,n,B.aT,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,p,r,r,r,r,r,r),r)],o),B.aI),r,r),A.E7(B.c8,A.b([new A.cc(new A.aW(0,0,15,65),new A.cx(B.bz,r,r,A.i6(r,A.hg(B.j0,r),r,r,!1,A.agd()),r),r),new A.cc(new A.aW(15,0,0,0),new A.cx(B.eF,r,r,A.i6(r,A.hg(B.ft,r),r,r,!1,s.gtN()),r),r),new A.cx(B.eE,r,r,A.i6(r,A.hg(B.yv,r),r,r,!1,p),r),new A.cc(new A.aW(0,0,15,0),new A.cx(B.bz,r,r,A.i6(r,A.hg(B.yw,r),r,r,!1,s.gP2()),r),r),new A.cc(new A.aW(0,0,85,0),new A.cx(B.bz,r,r,A.i6(r,A.hg(B.j_,r),r,r,!1,new A.a40(a)),r),r)],o),B.ej),B.f1)}}
+P(a){var s=this,r=null,q=A.aaX(A.uM(s.a.c,r,r)),p=s.gur(),o=t.c,n=A.a7S(A.b([A.uM("Eat some "+A.p(s.e.k(0,"food")),A.aG(a).p1.e,B.c_),A.uM(A.p(s.e.k(0,"emoji")),A.oa(r,r,r,r,r,r,r,r,r,r,r,250,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.c_)],o),B.aI)
+return A.ady(q,A.q2(A.a7S(A.b([new A.cc(new A.aW(0,40,0,80),A.AV(r,n,B.aT,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,p,r,r,r,r,r,r),r)],o),B.aI),r,r),A.E7(B.c8,A.b([new A.cc(new A.aW(0,0,15,65),new A.cx(B.bz,r,r,A.i6(r,A.hg(B.j0,r),r,r,!1,A.agd()),r),r),new A.cc(new A.aW(15,0,0,0),new A.cx(B.eF,r,r,A.i6(r,A.hg(B.ft,r),r,r,!1,s.gtN()),r),r),new A.cx(B.eE,r,r,A.i6(r,A.hg(B.yw,r),r,r,!1,p),r),new A.cc(new A.aW(0,0,15,0),new A.cx(B.bz,r,r,A.i6(r,A.hg(B.yv,r),r,r,!1,s.gP2()),r),r),new A.cc(new A.aW(0,0,85,0),new A.cx(B.bz,r,r,A.i6(r,A.hg(B.j_,r),r,r,!1,new A.a40(a)),r),r)],o),B.ej),B.f1)}}
 A.a3Z.prototype={
 $0(){var s,r=this.a;++r.d
-s=r.w[B.im.Ha(51)]
-r.f=s
-r.r.push(s)},
+s=r.r[B.im.Ha(51)]
+r.e=s
+r.f.push(s)},
 $S:0}
 A.a3Y.prototype={
 $0(){var s,r=this.a
-if(r.d>1){s=r.r
+if(r.d>1){s=r.f
 s.pop()
-r.f=s[--r.d-1]}},
+r.e=s[--r.d-1]}},
 $S:0}
 A.a40.prototype={
 $0(){var s=A.acN(new A.a4_(),null,t.z)
@@ -60481,8 +60481,8 @@ B.ft=new A.es(57490,!0)
 B.yt=new A.es(57634,!1)
 B.yu=new A.es(58136,!1)
 B.iZ=new A.es(58332,!1)
-B.yv=new A.es(58644,!1)
-B.yw=new A.es(58727,!1)
+B.yv=new A.es(58727,!1)
+B.yw=new A.es(58785,!1)
 B.j_=new A.es(58851,!1)
 B.j0=new A.es(62652,!1)
 B.j1=new A.ca(24,0,400,0,48,B.m,1,null,!1)
