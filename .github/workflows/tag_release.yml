@@ -1,6 +1,7 @@
 name: Bump version
 on:
-  push:
+  deployment_status:
+    types: [completed]
 jobs:
   build:
     runs-on: ubuntu-latest
